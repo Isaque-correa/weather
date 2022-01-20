@@ -1,0 +1,220 @@
+@import './base/base.scss';
+@import './base/reset.scss';
+
+body {
+    background: linear-gradient(rgb(64, 93, 253) 35%, #861ec2);
+}
+
+.weather__form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+
+    input {
+        @include sourceSansProLight;
+        letter-spacing: 2px;
+        height: 50px;
+        width: 50%;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 20px;
+        border: none;
+
+        @include mobile {
+            width: 100%;
+            height: 6%;
+            font-size: 70px;
+        }
+    }
+
+    button {
+        @include sourceSansProRegular;
+        height: 70px;
+        width: 25%;
+        border-radius: 10px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        background: #fff;
+        transition: 0.9s;
+        color: #000;
+
+        @include mobile {
+            width: 50%;
+            height: 6%;
+            font-size: 45px;
+        }
+    }
+
+    button:hover {
+        background: #000;
+        color: #fff;
+    }
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    @include mobile {
+        align-items: normal;
+        height: 150vh;
+
+    }
+
+    &__header {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
+        img {
+            width: 20%;
+
+            @include mobile {
+                width: 50%;
+            }
+        }
+
+        .title {
+            box-shadow: 3px 3px 10px #000;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: rgba(159 152 152 / 30%);
+
+            @include mobile {
+                padding-bottom: 90px;
+                padding-top: 90px;
+            }
+
+            h2 {
+                color: #fff;
+                font-size: 30px;
+                letter-spacing: 1px;
+                @include sourceSansProBold;
+
+                @include mobile {
+                    font-size: 60px;
+                }
+            }
+
+            h3 {
+                color: #fff;
+                font-size: 50px;
+                letter-spacing: 1px;
+                margin-top: 30px;
+                @include sourceSansProRegular;
+
+                @include mobile {
+                    font-size: 70px;
+                }
+
+                p {
+                    color: #340350;
+                    font-size: 30px;
+                    margin-top: 20px;
+                    @include sourceSansProLight;
+
+                    @include mobile {
+                        font-size: 60px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    li {
+        list-style: none;
+        color: #fff;
+        font-size: 35px;
+        margin-top: 20px;
+        @include sourceSansProRegular;
+        text-shadow: -3px -2px #000;
+
+        @include mobile {
+            font-size: 65px;
+
+        }
+
+        @include tablet {
+            font-size: 20px;
+            margin-left: 16px;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+            @include sourceSansProLight;
+            box-shadow: 3px 3px 10px black;
+            text-shadow: none;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(159 152 152 / 30%);
+
+            @include mobile {
+                font-size: 60px;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        width: 95%;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 30px;
+
+        @include mobile {
+            display: block;
+            width: 65%;
+        }
+
+    }
+
+    button {
+        height: 70px;
+        width: 25%;
+        border-radius: 10px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        background: #fff;
+        transition: 0.9s;
+        color: #000;
+        margin-top: 50px;
+        @include sourceSansProRegular;
+
+        @include mobile {
+            margin-left: 7%;
+            height: 5%;
+            width: 55%;
+            font-size: 50px;
+        }
+
+        @include tablet {
+            margin-top: 10px;
+        }
+    }
+
+    button:hover {
+        background: #340350;
+        color: #fff;
+    }
+
+
+}
