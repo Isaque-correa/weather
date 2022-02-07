@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { geolocation } from "../services/geolocation.service";
+import Footer from "./footer.component";
 
 function SearchBar() {
   let navigate = useNavigate();
@@ -17,23 +18,26 @@ function SearchBar() {
     });
   };
   return (
-    <form onSubmit={search} className="weather__form">
-      <input
-        name="city"
-        type="text"
-        placeholder="Digite sua Cidade"
-        className="city"
-        required
-      />
-      <div className="location">
-        <button type="submit" value="Enviar" className="btn btn-primary">
-          Verificar o clima
-        </button>
-        <button type="button" onClick={location}>
-          Obter localização
-        </button>
-      </div>
-    </form>
+    <div>
+      <form onSubmit={search} className="weather__form">
+        <input
+          name="city"
+          type="text"
+          placeholder="Digite sua Cidade"
+          className="city"
+          required
+        />
+        <div className="location">
+          <button type="submit" value="Enviar" className="btn btn-primary">
+            Verificar o clima
+          </button>
+          <button type="button" onClick={location}>
+            Obter localização
+          </button>
+        </div>
+      </form>
+      <Footer />
+    </div>
   );
 }
 

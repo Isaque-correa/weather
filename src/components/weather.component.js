@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { getTheWeatherAsync } from "../services/clima.service";
+import Footer from "./footer.component";
 import LayoutComponent from "./layout.component";
 import Loading from "./loading.component";
 function WeatherComponent() {
@@ -39,7 +40,13 @@ function WeatherComponent() {
   if (weather == null) {
     return <Loading />;
   } else {
-    return <LayoutComponent result={weather} />;
+    return (
+      <>
+        {" "}
+        <LayoutComponent result={weather} />
+        <Footer />
+      </>
+    );
   }
 }
 
