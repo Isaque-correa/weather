@@ -12,10 +12,6 @@ O projeto prever o tempo climático de sua cidade ou local de onde você se enco
 
 Claro que a cada projeto nos evolui, aos pouco vamos pegando o jeito nesse projeto foi utilizado bootstrap, React e sass, mas o foco mesmo de projeto foi em consumir as API, como chamar ela usando axios onde passo o endereço da API e depois utilizando a sintaxe useEffect para passar as informações que serão implementadas e utilizadas na aplicação, e como bônus tive o conhecimento de gerar um link para hospedar uma page no github utilizando o react.
 
-### Pagina inicial:
+### Pagina Desktop:
 
-![pagina-inicial](https://user-images.githubusercontent.com/59630856/150587742-54a6df18-339b-4bdc-bdfd-3d188e39d1de.png)
-
-### Informaçao clima:
-
-![clima](https://user-images.githubusercontent.com/59630856/150588044-72fc78ea-4530-4480-a59e-f7c6462a0958.png)
+![Previsão do Tempo - Google Chrome 2022-02-07 12-13-11](https://user-images.githubusercontent.com/59630856/152817006-296174b7-8d65-4bcc-a725-fafda7d323ba.gif)
